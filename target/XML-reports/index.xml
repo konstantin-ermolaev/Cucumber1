@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="14.295">
+    <testcase classname="Login Validation" name="Login functionality with valid credentials" time="13.936">
+        <system-out><![CDATA[Given User open the browser.................................................passed
+And User enters the url "www.gmail.com".....................................passed
+And User clicks on Login button.............................................passed
+When User enters name "LGUser1".............................................passed
+And User enters password "Password@1".......................................passed
+And User clicks on Sign In button...........................................passed
+Then User should gt successfully logged in..................................passed
+And Browser should get closed...............................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

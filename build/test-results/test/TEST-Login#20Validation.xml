@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Login Validation" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-10-07T15:32:21" hostname="LENOVO_G780" time="14.128">
+  <properties/>
+  <testcase name="Login functionality with valid credentials" classname="Login Validation" time="14.128"/>
+  <system-out><![CDATA[
+Scenario: Login functionality with valid credentials ?[90m# src/test/java/myFeatures/LoginValidationCheck.feature:3?[0m
+  ?[32mGiven ?[0m?[32mUser open the browser?[0m                        ?[90m# stepsDefinition.LoginValidationSteps.userOpenTheBrowser()?[0m
+  ?[32mAnd ?[0m?[32mUser enters the url ?[0m?[32m?[1m"www.gmail.com"?[0m            ?[90m# stepsDefinition.LoginValidationSteps.userEntersTheUrl(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32mUser clicks on Login button?[0m                    ?[90m# stepsDefinition.LoginValidationSteps.userClicksOnLoginButton()?[0m
+  ?[32mWhen ?[0m?[32mUser enters name ?[0m?[32m?[1m"LGUser1"?[0m                    ?[90m# stepsDefinition.LoginValidationSteps.userEntersName(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32mUser enters password ?[0m?[32m?[1m"Password@1"?[0m              ?[90m# stepsDefinition.LoginValidationSteps.userEntersPassword(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32mUser clicks on Sign In button?[0m                  ?[90m# stepsDefinition.LoginValidationSteps.userClicksOnSignInButton()?[0m
+  ?[32mThen ?[0m?[32mUser should gt successfully logged in?[0m         ?[90m# stepsDefinition.LoginValidationSteps.userShouldGtSuccessfullyLoggedIn()?[0m
+  ?[32mAnd ?[0m?[32mBrowser should get closed?[0m                      ?[90m# stepsDefinition.LoginValidationSteps.browserShouldGetClosed()?[0m
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 106.0.5249.21 (71f4e2c9a6f38f5550a8ea29a984a08304554956-refs/branch-heads/5249@{#228}) on port 51460
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+окт. 07, 2022 6:32:25 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+окт. 07, 2022 6:32:26 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found exact CDP implementation for version 106
+]]></system-err>
+</testsuite>
