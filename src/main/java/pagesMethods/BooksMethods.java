@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public class BooksMethods extends BaseClass{
 
-    String checkUsername = null;
+    static String checkUsername = null;
 
     public void openBrowser() throws IOException {
         BaseClass.Initialization();

@@ -5,8 +5,8 @@ import projectDriver.SelectDrivers;
 import projectUtilities.AllConstants;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Properties;
 
 public class BaseClass {
@@ -24,6 +24,8 @@ public class BaseClass {
 
     public static void insertUrl() {
         driver.get(prop.getProperty("url"));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
     }
 
     public static void tearDown() {

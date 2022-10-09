@@ -14,8 +14,8 @@ public class LoginValidationSteps {
         methods.openBrowser();
     }
 
-    @And("User enters the url {string}")
-    public void userEntersTheUrl(String arg0) {
+    @And("User enters the url")
+    public void userEntersTheUrl() {
         methods.enterUrl();
     }
 
@@ -40,7 +40,7 @@ public class LoginValidationSteps {
         methods.clickOnSignInButton();
     }
 
-    @Then("User should gt successfully logged in")
+    @Then("User should get successfully logged in")
     public void userShouldGtSuccessfullyLoggedIn() {
         methods.validateLogin();
     }
@@ -65,4 +65,6 @@ public class LoginValidationSteps {
     @Then("User checks his signature line:")
     public void userChecksHisSignatureLine() {
     }
+
+
 }

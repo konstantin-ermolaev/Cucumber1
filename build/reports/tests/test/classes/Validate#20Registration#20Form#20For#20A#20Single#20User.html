@@ -3,17 +3,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta http-equiv="x-ua-compatible" content="IE=edge"/>
-<title>Test results - Class Login Validation</title>
+<title>Test results - Class Validate Registration Form For A Single User</title>
 <link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
 <link href="../css/style.css" rel="stylesheet" type="text/css"/>
 <script src="../js/report.js" type="text/javascript"></script>
 </head>
 <body>
 <div id="content">
-<h1>Class Login Validation</h1>
+<h1>Class Validate Registration Form For A Single User</h1>
 <div class="breadcrumbs">
 <a href="../index.html">all</a> &gt; 
-<a href="../packages/default-package.html">default-package</a> &gt; Login Validation</div>
+<a href="../packages/default-package.html">default-package</a> &gt; Validate Registration Form For A Single User</div>
 <div id="summary">
 <table>
 <tr>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">14.128s</div>
+<div class="counter">14.557s</div>
 <p>duration</p>
 </div>
 </td>
@@ -81,8 +81,8 @@
 </tr>
 </thead>
 <tr>
-<td class="success">Login functionality with valid credentials</td>
-<td class="success">14.128s</td>
+<td class="success">Registration Form Entry Validation</td>
+<td class="success">14.557s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -91,29 +91,29 @@
 <h2>Standard output</h2>
 <span class="code">
 <pre>
-Scenario: Login functionality with valid credentials ?[90m# src/test/java/myFeatures/LoginValidationCheck.feature:3?[0m
-  ?[32mGiven ?[0m?[32mUser open the browser?[0m                        ?[90m# stepsDefinition.LoginValidationSteps.userOpenTheBrowser()?[0m
-  ?[32mAnd ?[0m?[32mUser enters the url ?[0m?[32m?[1m&quot;www.gmail.com&quot;?[0m            ?[90m# stepsDefinition.LoginValidationSteps.userEntersTheUrl(java.lang.String)?[0m
-  ?[32mAnd ?[0m?[32mUser clicks on Login button?[0m                    ?[90m# stepsDefinition.LoginValidationSteps.userClicksOnLoginButton()?[0m
-  ?[32mWhen ?[0m?[32mUser enters name ?[0m?[32m?[1m&quot;LGUser1&quot;?[0m                    ?[90m# stepsDefinition.LoginValidationSteps.userEntersName(java.lang.String)?[0m
-  ?[32mAnd ?[0m?[32mUser enters password ?[0m?[32m?[1m&quot;Password@1&quot;?[0m              ?[90m# stepsDefinition.LoginValidationSteps.userEntersPassword(java.lang.String)?[0m
-  ?[32mAnd ?[0m?[32mUser clicks on Sign In button?[0m                  ?[90m# stepsDefinition.LoginValidationSteps.userClicksOnSignInButton()?[0m
-  ?[32mThen ?[0m?[32mUser should gt successfully logged in?[0m         ?[90m# stepsDefinition.LoginValidationSteps.userShouldGtSuccessfullyLoggedIn()?[0m
-  ?[32mAnd ?[0m?[32mBrowser should get closed?[0m                      ?[90m# stepsDefinition.LoginValidationSteps.browserShouldGetClosed()?[0m
+Scenario: Registration Form Entry Validation  ?[90m# src/test/java/myFeatures/DataTableSingleUser.feature:3?[0m
+  ?[32mGiven ?[0m?[32mUser open the browser?[0m                 ?[90m# stepsDefinition.LoginValidationSteps.userOpenTheBrowser()?[0m
+  ?[32mAnd ?[0m?[32mUser enters the url?[0m                     ?[90m# stepsDefinition.LoginValidationSteps.userEntersTheUrl()?[0m
+  ?[32mAnd ?[0m?[32mUser navigates to the Registration page?[0m ?[90m# stepsDefinition.DataTableSingleUserSteps.userNavigatesToTheRegistrationPage()?[0m
+  ?[32mWhen ?[0m?[32mUser enters the single student details?[0m ?[90m# stepsDefinition.DataTableSingleUserSteps.userEntersTheSingleStudentDetails(io.cucumber.datatable.DataTable)?[0m
+    | Ahan | A | Ahan.a@gmail.com | Male | 9861478950 | Maths |
+  ?[32mThen ?[0m?[32mBrowser should get closed?[0m              ?[90m# stepsDefinition.LoginValidationSteps.browserShouldGetClosed()?[0m
 </pre>
 </span>
 </div>
 <div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>Starting ChromeDriver 106.0.5249.21 (71f4e2c9a6f38f5550a8ea29a984a08304554956-refs/branch-heads/5249@{#228}) on port 51460
+<pre>Starting ChromeDriver 106.0.5249.21 (71f4e2c9a6f38f5550a8ea29a984a08304554956-refs/branch-heads/5249@{#228}) on port 51786
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-окт. 07, 2022 6:32:25 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+окт. 09, 2022 9:58:27 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected upstream dialect: W3C
-окт. 07, 2022 6:32:26 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+окт. 09, 2022 9:58:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found exact CDP implementation for version 106
+окт. 09, 2022 9:58:37 PM org.openqa.selenium.os.OsProcess destroy
+SEVERE: Unable to kill process Process[pid=21332, exitValue=1]
 </pre>
 </span>
 </div>
@@ -125,7 +125,7 @@ INFO: Found exact CDP implementation for version 106
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.1</a> at 7 окт. 2022 г., 18:32:36</p>
+<a href="http://www.gradle.org">Gradle 7.1</a> at 9 окт. 2022 г., 21:58:38</p>
 </div>
 </div>
 </body>
