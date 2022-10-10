@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Validate Registration Form For Multiple Users" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-10-10T06:17:17" hostname="LENOVO_G780" time="35.023">
+  <properties/>
+  <testcase name="Registration Form Entry Validation" classname="Validate Registration Form For Multiple Users" time="35.023"/>
+  <system-out><![CDATA[
+Scenario: Registration Form Entry Validation     ?[90m# src/test/java/myFeatures/DataTableMultipleUser.feature:3?[0m
+  ?[32mGiven ?[0m?[32mUser open the browser?[0m                    ?[90m# stepsDefinition.LoginValidationSteps.userOpenTheBrowser()?[0m
+  ?[32mAnd ?[0m?[32mUser enters the url?[0m                        ?[90m# stepsDefinition.LoginValidationSteps.userEntersTheUrl()?[0m
+  ?[32mAnd ?[0m?[32mUser navigates to the Registration page?[0m    ?[90m# stepsDefinition.DataTableSingleUserSteps.userNavigatesToTheRegistrationPage()?[0m
+  ?[32mWhen ?[0m?[32mUser enters the multiple students details?[0m ?[90m# stepsDefinition.DataTableMultipleUserSteps.userEntersTheMultipleStudentsDetails(io.cucumber.datatable.DataTable)?[0m
+    | firstName | lastName | email             | gender | phone      | subject        |
+    | Ahan      | A        | Ahan.a@gmail.com  | Male   | 9861478950 | Maths          |
+    | John      | S        | John.s@gmail.com  | Male   | 5487698621 | Computer Since |
+    | Snita     | C        | Smita.c@gmail.com | Female | 9861778950 | Maths          |
+  ?[32mThen ?[0m?[32mBrowser should get closed?[0m                 ?[90m# stepsDefinition.LoginValidationSteps.browserShouldGetClosed()?[0m
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 106.0.5249.21 (71f4e2c9a6f38f5550a8ea29a984a08304554956-refs/branch-heads/5249@{#228}) on port 51775
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+окт. 10, 2022 9:17:21 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+окт. 10, 2022 9:17:21 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found exact CDP implementation for version 106
+]]></system-err>
+</testsuite>

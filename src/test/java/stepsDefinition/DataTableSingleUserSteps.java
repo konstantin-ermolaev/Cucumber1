@@ -22,4 +22,6 @@ public class DataTableSingleUserSteps {
         methods.userEntersRegistrationDetails(userData.get(0), userData.get(1), userData.get(2),
                 userData.get(3), userData.get(4), userData.get(5));
     }
+
+
 }

@@ -40,7 +40,17 @@ public class RegistrationMethods extends BaseClass {
         RegistrationPage.txtSubject.clear();
         RegistrationPage.txtSubject.sendKeys(subject);
         RegistrationPage.txtSubject.sendKeys(Keys.ENTER);
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         js.executeScript("arguments[0].click();", RegistrationPage.btnSubmit);
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         js.executeScript("arguments[0].click();", RegistrationPage.btnClose);
 /*        RegistrationPage.btnSubmit.click();
         RegistrationPage.btnClose.click();*/

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="14.797">
-    <testcase classname="Validate Registration Form For A Single User" name="Registration Form Entry Validation" time="14.338">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="35.174">
+    <testcase classname="Validate Registration Form For Multiple Users" name="Registration Form Entry Validation" time="34.85">
         <system-out><![CDATA[Given User open the browser.................................................passed
 And User enters the url.....................................................passed
 And User navigates to the Registration page.................................passed
-When User enters the single student details.................................passed
+When User enters the multiple students details..............................passed
 Then Browser should get closed..............................................passed
 ]]></system-out>
     </testcase>
